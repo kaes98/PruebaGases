@@ -1,0 +1,3181 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Prueba Técnica Gases del Caribe &#8212; Prueba Gases del Caribe</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PruebGases2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Prueba Técnica Gases del Caribe
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPruebGases2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/PruebGases2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Prueba Técnica Gases del Caribe</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">TEORÍA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sql">1. SQL</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-cual-es-la-estructura-basica-de-un-select">A. ¿Cuál es la estructura básica de un SELECT?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-que-es-un-join">B. ¿Qué es un JOIN?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-diferencias-entre-inner-join-y-left-join">C. Diferencias entre INNER JOIN y LEFT JOIN.</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadistica">2. ESTADÍSTICA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-dar-3-ejemplos-de-distribuciones-estadisticas">A. Dar 3 ejemplos de distribuciones estadísticas.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-defina-media-mediana-y-moda">B.  Defina media, mediana y moda.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-como-identificar-datos-atipicos">C.  ¿Cómo identificar datos atípicos?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-de-que-forma-trataria-con-datos-faltantes">D.  ¿De qué forma trataría con datos faltantes?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-modelado">ANÁLISIS Y MODELADO</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio">3.  ANÁLISIS EXPLORATORIO</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-numerica-de-los-datos">Descripción númerica de los datos</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-univariado">Análisis univariado</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#periodo">PERIODO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#departamento">DEPARTAMENTO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">CLASIFICACION</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-consumo">TIPO CONSUMO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo">CONSUMO</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-bivariado">Análisis Bivariado</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-vs-clasificacion">CONSUMO VS CLASIFICACIÓN</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-vs-departamento">CONSUMO VS DEPARTAMENTO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-vs-periodo">CONSUMO VS PERIODO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-vs-departamento">CLASIFICACION VS DEPARTAMENTO</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-correlacion">ANÁLISIS DE CORRELACIÓN</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-los-datos">PREPARACIÓN DE LOS DATOS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planteamiento-de-modelo">4. PLANTEAMIENTO DE MODELO</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelado">5. MODELADO</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prediccion">PREDICCIÓN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="prueba-tecnica-gases-del-caribe">
+<h1>Prueba Técnica Gases del Caribe<a class="headerlink" href="#prueba-tecnica-gases-del-caribe" title="Permalink to this heading">#</a></h1>
+<p><strong>Autor:</strong> Karina Rodríguez
+<br>
+<strong>Fecha:</strong> 30/11/2023</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="teoria">
+<h2>TEORÍA<a class="headerlink" href="#teoria" title="Permalink to this heading">#</a></h2>
+<section id="sql">
+<h3>1. SQL<a class="headerlink" href="#sql" title="Permalink to this heading">#</a></h3>
+<section id="a-cual-es-la-estructura-basica-de-un-select">
+<h4>A. ¿Cuál es la estructura básica de un SELECT?<a class="headerlink" href="#a-cual-es-la-estructura-basica-de-un-select" title="Permalink to this heading">#</a></h4>
+<p>La estructura básica de un SELECT corresponde a:</p>
+<p>(1) <strong>SELECT</strong> –Campos que se desean seleccionar–</p>
+<p>(2) <strong>FROM</strong> –Tabla de la cual se quieren extraer los campos/datos–</p>
+<p>(3) –Otras cláusulas que permitan realizar operaciones sobre los datos. Ej: <strong>WHERE</strong>, para establecer una condición de filtrado; <strong>ORDER BY</strong>, para ordenar los datos; <strong>GROUP BY</strong> para agrupar los datos–  –Expresión que acompaña a la cláusula–</p>
+<p><strong>Ejemplo:</strong>
+A continuación se muestra la tabla Fruta, la cual tiene 3 campos: un id para identificar la fruta, el tipo de fruta y cantidad de frutas por cada tipo.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;id&quot;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+              <span class="s2">&quot;Tipo&quot;</span><span class="p">:[</span><span class="s2">&quot;Banana&quot;</span><span class="p">,</span> <span class="s2">&quot;Fresa&quot;</span><span class="p">,</span> <span class="s2">&quot;Piña&quot;</span><span class="p">,</span> <span class="s2">&quot;Coco&quot;</span><span class="p">],</span>
+              <span class="s2">&quot;Cantidad&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">]})</span>
+<span class="n">display</span><span class="p">(</span><span class="n">fruta</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>Tipo</th>
+      <th>Cantidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Banana</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Fresa</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Piña</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Coco</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><strong>Query:</strong>
+<br>
+<strong>SELECT</strong> Tipo (Campo a seleccionar)
+<br>
+<strong>FROM</strong> Fruta (Tabla de la cual se extraen los datos)
+<br>
+<strong>WHERE</strong> (cláusula adicional) Cantidad &gt;= 5 (expresión que acompaña a la cláusula)</p>
+<p>En este ejemplo se selecciona el campo Tipo de la tabla Fruta, pero solo aquellas frutas en las que se tiene una cantidad mayor o igual a 5, por lo que el resultado esperado seria: Fresa y Coco.</p>
+</section>
+<section id="b-que-es-un-join">
+<h4>B. ¿Qué es un JOIN?<a class="headerlink" href="#b-que-es-un-join" title="Permalink to this heading">#</a></h4>
+<p>Es una cláusula que permite realizar una unión entre los registros (filas) de dos tablas, a partir de 1 o más campos que tengan en común las tablas. Se pueden realizar distintos tipos de Join entre las tablas, dependiendo del resultado que se quiera lograr.</p>
+<p>Estructura de un <strong>JOIN</strong>:</p>
+<p><strong>SELECT</strong> Tipo</p>
+<p><strong>FROM</strong> Fruta</p>
+<p><strong>INNER JOIN</strong> Jugos <strong>ON</strong> <a class="reference external" href="http://Fruta.id">Fruta.id</a> = Jugos.IdFruta</p>
+<p>En este ejemplo las dos tablas que se van a unir son Fruta y Jugos. Los campos que tienen en común estas dos tablas son Id y IdFruta, por lo que la unicón se realizará a partir de este campo.</p>
+<p>Entre los tipo de JOIN que conozco estan:</p>
+<ul class="simple">
+<li><p><strong>INNER:</strong> con esta unión el resultado es una tabla que contiene los registros que se encuentran en ambas tablas, basado en el campo usado para unirlas. Los registros que se encuentran en una tabla pero no en la otra, no son tenidos en cuenta.</p></li>
+<li><p><strong>LEFT:</strong> con esta unión el resultados es una tabla con todos los registros de la tabla de la izquierda (en el ejemplo de las frutas la tabla de la izquierda es la que va antes del IINER JOIN), y solo los registros de la tabla derecha que se tienen en común con la tabla izquierda.</p></li>
+<li><p><strong>RIGTH:</strong> con esta unión el resultados es una tabla con todos los registros de la tabla de la derecha (en el ejemplo de las frutas la tabla de la derecha es la que va despues del INNER JOIN), y solo los registros de la tabla izquierda que se tienen en común con la tabla derecha.</p></li>
+<li><p><strong>FULL:</strong> con esta unión el resultados es una tabla con todos los registros de las dos tablas, aunque no existan registros en común.</p></li>
+</ul>
+</section>
+<section id="c-diferencias-entre-inner-join-y-left-join">
+<h4>C. Diferencias entre INNER JOIN y LEFT JOIN.<a class="headerlink" href="#c-diferencias-entre-inner-join-y-left-join" title="Permalink to this heading">#</a></h4>
+<p>La principal diferencia entre estos dos tipos de JOIN es que que el INNER da como resultado una tabla con los registros que se tienen en común entre las dos tablas que se van a unir, mientras que el LEFT JOIN, da como resultado una tabla con todos los registros de la tabla de la izquierda (la que esta al aldo del FROM) y solo los registros de la tabla derecha que se tienen en común con la tabla izquierda. Para los registros que se encuentran en la tabla izquierda, pero no en la derecha, se tendrian valores faltantes en los campos que provienen de la tabla derecha.</p>
+<p>Otra forma de verlo, es que el resultado de un INNER JOIN es la intersección entre dos conjuntos, en este caso cada tabla es un conjunto, y la intersección son los registros que tienen en común las dos tablas, y no se tienen en cuenta todos los registros por fuera de la intersección. En el LEFT JOIN el resultado son todos los registros en la tabla de la izquierda, los registros en la intersección, dejando por fuera todo los registros que solo se encuentran en la tabla de la derecha.</p>
+<p>Se tiene la tabla fruta:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;id&quot;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+              <span class="s2">&quot;Tipo&quot;</span><span class="p">:[</span><span class="s2">&quot;Banana&quot;</span><span class="p">,</span> <span class="s2">&quot;Fresa&quot;</span><span class="p">,</span> <span class="s2">&quot;Piña&quot;</span><span class="p">,</span> <span class="s2">&quot;Coco&quot;</span><span class="p">,</span> <span class="s2">&quot;Corozo&quot;</span><span class="p">],</span>
+              <span class="s2">&quot;Cantidad&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">]})</span>
+<span class="n">display</span><span class="p">(</span><span class="n">fruta</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>Tipo</th>
+      <th>Cantidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Banana</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Fresa</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Piña</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Coco</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Corozo</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Y la tabla jugos:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jugos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;id&quot;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+              <span class="s2">&quot;Jugo&quot;</span><span class="p">:[</span><span class="s2">&quot;Granizado de Banana&quot;</span><span class="p">,</span> <span class="s2">&quot;Malteada de Fresa&quot;</span><span class="p">,</span> <span class="s2">&quot;Agua de Piña&quot;</span><span class="p">,</span> <span class="s2">&quot;Agua de Coco&quot;</span><span class="p">],</span>
+              <span class="s2">&quot;Costo&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">6000</span><span class="p">,</span> <span class="mi">6500</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">],</span>
+              <span class="s2">&quot;IdFruta&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>
+<span class="n">display</span><span class="p">(</span><span class="n">jugos</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>Jugo</th>
+      <th>Costo</th>
+      <th>IdFruta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Granizado de Banana</td>
+      <td>6000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Malteada de Fresa</td>
+      <td>6500</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Agua de Piña</td>
+      <td>5000</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Agua de Coco</td>
+      <td>5000</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><strong>Query</strong></p>
+<p><strong>SELECT</strong> Tipo, Cantidad, Jugo, Costo</p>
+<p><strong>FROM</strong> Fruta</p>
+<p><strong>INNER JOIN</strong> Jugos <strong>ON</strong> <a class="reference external" href="http://Fruta.id">Fruta.id</a> = Jugos.IdFruta</p>
+<p>Al hacer un INNER JOIN entre las tablas el resultado esperado seria el siguiente:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">fruta</span><span class="p">,</span> <span class="n">jugos</span><span class="p">,</span>  <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;IdFruta&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="s2">&quot;Tipo&quot;</span><span class="p">,</span> <span class="s2">&quot;Cantidad&quot;</span><span class="p">,</span> <span class="s2">&quot;Jugo&quot;</span><span class="p">,</span> <span class="s2">&quot;Costo&quot;</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Tipo</th>
+      <th>Cantidad</th>
+      <th>Jugo</th>
+      <th>Costo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Banana</td>
+      <td>2</td>
+      <td>Granizado de Banana</td>
+      <td>6000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Fresa</td>
+      <td>5</td>
+      <td>Malteada de Fresa</td>
+      <td>6500</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Piña</td>
+      <td>0</td>
+      <td>Agua de Piña</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Coco</td>
+      <td>10</td>
+      <td>Agua de Coco</td>
+      <td>5000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>En este caso se excluye la información que corresponde a la fruta Corozo, ya que no se tiene información sobre esta en la tabla jugos.</p>
+<p>Al hacer un LEFT JOIN entre las tablas el resultado esperado serie el siguiente:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">fruta</span><span class="p">,</span> <span class="n">jugos</span><span class="p">,</span>  <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;IdFruta&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="s2">&quot;Tipo&quot;</span><span class="p">,</span> <span class="s2">&quot;Cantidad&quot;</span><span class="p">,</span> <span class="s2">&quot;Jugo&quot;</span><span class="p">,</span> <span class="s2">&quot;Costo&quot;</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Tipo</th>
+      <th>Cantidad</th>
+      <th>Jugo</th>
+      <th>Costo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Banana</td>
+      <td>2</td>
+      <td>Granizado de Banana</td>
+      <td>6000.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Fresa</td>
+      <td>5</td>
+      <td>Malteada de Fresa</td>
+      <td>6500.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Piña</td>
+      <td>0</td>
+      <td>Agua de Piña</td>
+      <td>5000.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Coco</td>
+      <td>10</td>
+      <td>Agua de Coco</td>
+      <td>5000.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Corozo</td>
+      <td>10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>En este caso se traen todos los regsitros de la tabla fruta, y los registros de la tabla jugos con los que se tiene una coincidencia. Para el caso del registro de la fruta Corozo, como no se tiene información en la tabla de jugos correspondiente a esta fruta, se muestran los dos campos que provienen de la tabla jugos con valores faltantes.</p>
+</section>
+</section>
+<section id="estadistica">
+<h3>2. ESTADÍSTICA<a class="headerlink" href="#estadistica" title="Permalink to this heading">#</a></h3>
+<section id="a-dar-3-ejemplos-de-distribuciones-estadisticas">
+<h4>A. Dar 3 ejemplos de distribuciones estadísticas.<a class="headerlink" href="#a-dar-3-ejemplos-de-distribuciones-estadisticas" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Distribución Poisson:</strong></p></li>
+</ul>
+<p>Esta distribución se da en datos de tipo discreto, y corresponde al número de ocurrencias de un evento en un intervalo de tiempo. Un ejemplo de esta distribución es el número de personas que llegan a una sucursal bancaria cada hora o el número de veces que una persona parpadea cada minuto.</p>
+<p><strong>Espacio muestral:</strong> números naturales de 0 a infinito.</p>
+<p><strong>Parámetro:</strong>
+Esta distribución solo tiene un parametro: <span class="math notranslate nohighlight">\(\lambda\)</span> (lambda). <br>
+Lambda corresponde al número de ocurrencias del evento en el intervalo de tiempo establecido,  y toma valores de <span class="math notranslate nohighlight">\(\{0,..., \inf\}\)</span>.</p>
+<p>Para una variable aleatoria discreta <span class="math notranslate nohighlight">\(X\)</span> que siga una distribución Poisson, el valor esperado <span class="math notranslate nohighlight">\(E(X)=\lambda\)</span>, al igual que la varianza <span class="math notranslate nohighlight">\(Var(X) = \lambda\)</span>.</p>
+<p><strong>Función de probabilidad:</strong></p>
+<p><span class="math notranslate nohighlight">\(P(X=k) = \frac{e^{-\lambda}\lambda^{k}}{k!}\)</span> (siempre y cuando k sea un valor en el espacio muestral de la distribucción, de lo contrario la función de probabilidad toma valor 0)</p>
+<p>Con la función de probabilidad, se puede saber la probabilidad de que la variable aleatoria discreta <span class="math notranslate nohighlight">\(X\)</span> tome un valor <span class="math notranslate nohighlight">\(k\)</span>. Por ejemplo, cual es la probabilidad de que lleguen 5 personas en una hora a la sucursal bancaria, o la probabilidad de que una persona parpadee 20 veces en un minuto.</p>
+<p>Ejemplo de una distribución Poisson, donde  <span class="math notranslate nohighlight">\(\lambda\)</span> toma el valor de 5, y se repite el evento 10000 veces:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">poisson</span><span class="p">(</span><span class="n">lam</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10000</span><span class="p">)</span>
+<span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="_images/76ee3224129ac2fbb22b5f5d4f30bc31215e50ab935178ff5cca5187471609bf.png" src="_images/76ee3224129ac2fbb22b5f5d4f30bc31215e50ab935178ff5cca5187471609bf.png" />
+</div>
+</div>
+<p>Se puede ver que es una distribución asimetrica, donde los valores se concentran alrededor de 5, ya que es el valor que se espera tome la distribución al repetirse muchas veces el experimento.</p>
+<ul class="simple">
+<li><p><strong>Distribucción Bernoulli</strong></p></li>
+</ul>
+<p>Esta distribución tambien se da en datos de tipo discreto, y se da cuando se tiene un evento con solo 2 posibles resultados, generalmente denominados como exito o fracaso, y hay una probabilidad de ocurrencia asociada con el exito. Un ejemplo de esta distribución es el tipico lanzamineto de monedas en donde se tiene solo dos opciones, cara o sello, y una probabilidad de 0.5 de de que salga cara o sello (a menos que la moneda esté trucada). Otro ejemplo seria los resultados de una prueba diagnostica para alguna enfermedad con una alta tasa de contagio, y se desea saber si se tiene o no la enfermedad, para lo cual hay una probabilidad del 0.6 de contraer la enfermedad.</p>
+<p><strong>Espacio muestral:</strong> {0,1} (el exito se considera como 1, y el fracaso 0)</p>
+<p><strong>Parámetro:</strong>
+Esta distribución solo tiene un parametro: <span class="math notranslate nohighlight">\(p\)</span> . <br>
+<span class="math notranslate nohighlight">\(p\)</span> corresponde a la probabilidad de tener exito, y toma valores de <span class="math notranslate nohighlight">\(0 &lt;= p &lt;= 1\)</span>.</p>
+<p>Para una variable aleatoria discreta <span class="math notranslate nohighlight">\(X\)</span> que siga una distribución Bernoulli, el valor esperado <span class="math notranslate nohighlight">\(E(X)=p\)</span>, al igual que la varianza <span class="math notranslate nohighlight">\(Var(X) = p(1-p)\)</span>.</p>
+<p><strong>Función de probabilidad:</strong></p>
+<p><span class="math notranslate nohighlight">\(P(X=k) = p^{k}(1-p)^{1-k}\)</span> (siempre y cuando k sea un valor en el espacio muestral de la distrbiucción, de lo contrario la función de probabilidad toma valor 0)</p>
+<p>Con la función de probabilidad, se puede saber la probabilidad de que la variable aleatoria discreta <span class="math notranslate nohighlight">\(X\)</span> tome un valor <span class="math notranslate nohighlight">\(k\)</span>, es decir, que sea 0 o 1. En el ejemplo de las monedas, podriamos considerar un exito que se tenga cara como resultado, y un fracaso que salga 0, cuando la probabilidad de sacar cara es 0.5.</p>
+<p>Ejemplo de una distribución Bernoulli, donde  <span class="math notranslate nohighlight">\(p\)</span> toma el valor de 0.1, y se repite el evento 10000 veces:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="_images/e980d6fbdb1c101f1b74c1ba789a92feab00c91abcf8cdfc930c191afe6d38e1.png" src="_images/e980d6fbdb1c101f1b74c1ba789a92feab00c91abcf8cdfc930c191afe6d38e1.png" />
+</div>
+</div>
+<p>A partir de la distribución de Bernoulli, surgen otras distribuciones, como la Distribución Binomial, la cual permite modelar la ocurrencia de <span class="math notranslate nohighlight">\(k\)</span> exitos cuando se repite <span class="math notranslate nohighlight">\(n\)</span> veces un experimento (o cuando ocurre muchas veces un evento), y los resultados de los eventos no se ven influenciados por lo resultados de eventos anteriores. Esta distribución tambien es de discreta, con un espacio muestral de {0, …, <span class="math notranslate nohighlight">\(\inf\)</span>}</p>
+<ul class="simple">
+<li><p><strong>Distribucción Normal</strong></p></li>
+</ul>
+<p>Esta distribución se da en datos de tipo continuo, y la base de muchos de los metodos estadisticos. Es un ejemplo de esta distribución, seria las mediciones de estatura de un grupo de pacientes que van a revisión de medico general, las calificaciones de un grupo de estudiantes o mediciones de la longitud de barras de hierro producidas por maquinas.</p>
+<p><strong>Espacio muestral:</strong> Todos los reales <span class="math notranslate nohighlight">\(\R\)</span>.</p>
+<p><strong>Parámetro:</strong>
+Esta distribución solo tiene dos parametros: <span class="math notranslate nohighlight">\(\mu\)</span> y <span class="math notranslate nohighlight">\(\sigma^{2}\)</span>. <br>
+<span class="math notranslate nohighlight">\(\mu\)</span> se considera la media o el valor al que tienden la variable aleatoria con distribución normal, y toma valores de todos los reales <span class="math notranslate nohighlight">\(\R\)</span>. Por otro lado, <span class="math notranslate nohighlight">\(\sigma^{2}\)</span> es la varianza de los datos, con <span class="math notranslate nohighlight">\(\sigma^{2} &gt; 0\)</span>.</p>
+<p>Para una variable aleatoria discreta <span class="math notranslate nohighlight">\(X\)</span> que siga una distribución Normal, el valor esperado <span class="math notranslate nohighlight">\(E(X)=\mu\)</span>, al igual que la varianza <span class="math notranslate nohighlight">\(Var(X) = \sigma^{2}\)</span>. Como existen diferentes variaciones de la distribución normal, la esperanza y varianza no son iguales. Tomando de ejemplo la Distribución normal estandar, la cual es la mas utilizada en estadistica, tenemos que para esta distribución <span class="math notranslate nohighlight">\(\mu\)</span> = 0 y <span class="math notranslate nohighlight">\(\sigma^{2}\)</span> = 1.</p>
+<p><strong>Función de densidad:</strong></p>
+<p><span class="math notranslate nohighlight">\(f(x)= \frac{1}{\sqrt{2\pi\sigma^{2}}}e^{\frac{(x-\mu)^{2}}{2\sigma^{2}}}\)</span></p>
+<p>A diferencia de las distribuciones discretas, con la función de densidad no es posible saber la probabilidad de que <span class="math notranslate nohighlight">\(X\)</span> tome un valor exacto, ya que este valor siempre será 0. Para las dsitrbuciones continuas, se hace uso de la Función de distribución acumulada, para determinar la probabilidad de que <span class="math notranslate nohighlight">\(X\)</span> se menor o mayor a un valor, o que se encuentre en un intervalo especifico.</p>
+<p><strong>Función de distribución acumulada:</strong></p>
+<p><span class="math notranslate nohighlight">\(F(t) = P(X &lt;= t) =  \int_{-\infty}^{t} \frac{1}{\sqrt{2\pi\sigma^{2}}}e^{\frac{(x-\mu)^{2}}{2\sigma^{2}}}dx\)</span></p>
+<p>Con esto se podrian dar respuesta a preguntas como ¿Cual es la probabilidad de que la estatura de los pacientes sea mayor a 160.5 cm, o ¿Cual es la probabilidad de que los estudiantes pierdan el examen con una nota menor a 3?.</p>
+<p>Ejemplo de una distribución Normal, donde  <span class="math notranslate nohighlight">\(\mu\)</span> = 0, <span class="math notranslate nohighlight">\(\sigma^{2}\)</span> = 1, y se repite el evento 10000 veces:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10000</span><span class="p">)</span>
+<span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="_images/eb415cfa6f31631c8fb95e2a14ecc933821f3629f6e1b25eebf9b0537b918328.png" src="_images/eb415cfa6f31631c8fb95e2a14ecc933821f3629f6e1b25eebf9b0537b918328.png" />
+</div>
+</div>
+</section>
+<section id="b-defina-media-mediana-y-moda">
+<h4>B.  Defina media, mediana y moda.<a class="headerlink" href="#b-defina-media-mediana-y-moda" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Media
+<br>
+La media es una medida de tendencia central, que sirve para identificar hacia que valor se inclina una distribución de datos númericos. Se calcula realizando la suma de todos los valores númericos, y dividiento esa suma por la cantidad de datos. Es una de las medidas de tendecia central mas utilizada, pero se ve influenciada por valores extremos que se puedan tener en la distribución de datos. Por esto ultimo han surgido otras derivaciones de la media, como la media truncada, que buscan dismunir o eliminar la influencia de los datos extrmeos o atipicos sobre el valor de la media.</p></li>
+</ul>
+<p>Ejemplo:</p>
+<p>Se tiene de ejemplo el siguiente vector de números, el cual tiene la dsitribución mostrada en el historgrama</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/1b570f670a54932db655bec9123f6633afc8f608234264b3ce644f22a33d050f.png" src="_images/1b570f670a54932db655bec9123f6633afc8f608234264b3ce644f22a33d050f.png" />
+</div>
+</div>
+<p>La media para estos datos seria:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">media</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Media:&quot;</span><span class="p">,</span><span class="n">media</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Media: 2.727272727272727
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Mediana
+<br>
+La mediana es otra medida de tendencia central, que permite dividir lo datos en dos partes, siendo el punto central de la distribución de datos.
+Para obtener la mediana, primero se hace un ordenamiento de los datos, de manera ascendente, y se selecciona el valor que se encuentra en el punto central, teniendo igual cantidad de datos por debajo y por encima de ese valor. Cuando la cantidad de datos es impar, la mediana se encuentra facilmente de esa forma, pero cuando los datos son pares, se escogen los dos valores en la mitad de los datos, manteniendo la misma cantidad de datos por debajo y por encima de esos dos valores. La media de de los dos valores centrales seria la mediana. La mediana tiene la ventaja sobre la media, de que no es sensible a los valores extremos o atipicos, por lo que a veces se prefiere utilizarla por sobre la media, para describir un conjunto de datos.
+<br></p></li>
+</ul>
+<p>Para el ejemplo anterior, la mediana es:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="n">mediana</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mediana:&quot;</span><span class="p">,</span><span class="n">mediana</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0, 0, 1, 2, 2, 3, 3, 4, 5, 5, 5]
+Mediana: 3.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>En este caso se tiene un número de datos impar, y al ordenar los datos, el punto central es 3.</p>
+<ul class="simple">
+<li><p>Moda
+<br>
+La moda tambien es una medida de tendencia centrar, que permite saber cual es el valor mas frecuente en un conjunto de datos númericos (generalmente discretos) o cual es la categoria mas frecuente para datos de tipo categoricos. Se calcula simplemente realizando un conteo de los datos, y eligiendo el valor con mayor frecuencia.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;vector&quot;</span><span class="p">:</span><span class="n">v</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Moda:&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>vector
+5    3
+0    2
+2    2
+3    2
+1    1
+4    1
+Name: count, dtype: int64
+Moda: 5
+</pre></div>
+</div>
+</div>
+</div>
+<p>En este caso el valor con mayor frecuencia es 5, que se puede encontrar 3 veces en el conjunto de datos, por lo que la moda es 5.</p>
+</section>
+<section id="c-como-identificar-datos-atipicos">
+<h4>C.  ¿Cómo identificar datos atípicos?<a class="headerlink" href="#c-como-identificar-datos-atipicos" title="Permalink to this heading">#</a></h4>
+<p>Para identificar datos atipicos se pueden tener tres enfoques:</p>
+<ul class="simple">
+<li><p>Datos atipicos considerando los datos univariantes: solo interesan los datos atipicos para una sola variable.</p></li>
+<li><p>Datos atipicos considerando los datos bivariantes: interesan los datos atipicos para la relación de dos variables</p></li>
+<li><p>Datos atipicos considerando los datos multivariantes: interesan los datos atipicos para la relación de un conjunto de datos con mas de 2 variables.</p></li>
+</ul>
+<p>En el caso de querer identificar los casos atipicos univariantes, se pueden utilzar los siguientes metodos:</p>
+<ul class="simple">
+<li><p><strong>Utilizar el criterio del rango intercuartílico (IQR):</strong>
+El IQR se calcula teniendo en cuenta los cuartiles de un conjunto de datos, Q1 y Q3, los cuales representan los puntos que separan los datos en un 25% y 75% respectivamente. Restando el Q3 con el Q1 se obtiene el IQR.</p></li>
+</ul>
+<p>A partir del IQR se plantean dos limites:</p>
+<div class="math notranslate nohighlight">
+\[LI = Q1 -1.5IQR \]</div>
+<div class="math notranslate nohighlight">
+\[LS = Q3 +1.5IQR \]</div>
+<p>Todos los datos que se encuentre por debajo de LI o port encima de LS se consideran valores atipicos. Similar se podria realizar teniendo en cuenta los percentiles, considerando el percentil 2.5 y el 97.5 para calcular el IQR.
+Tambien se podria utilizar un bloxplot, para identificar visualmente los puntos que son considerados atipicos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;vector&quot;</span><span class="p">:[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span> <span class="mi">123</span><span class="p">]})</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">],</span>  <span class="p">[</span><span class="mf">0.25</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.75</span><span class="p">])</span>
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span> 
+<span class="n">LI</span> <span class="o">=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">IQR</span>
+<span class="n">LS</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">IQR</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">LI</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">LS</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>vector</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-10</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>123</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Se logra apreciar que para este conjunto de datos hay 3 atipicos, 1 para el limite inferior y 2 para el limite superior.</p>
+<ul>
+<li><p><strong>Filtro de Hampel:</strong> Tambien se puede usar el filtro de Hampel, que considera un itervalo conformado por la mediana (<span class="math notranslate nohighlight">\(\tilde{X}\)</span>), y la mediana de las desviaciones absolutas, <span class="math notranslate nohighlight">\(MAD = mediana(|X_{i}- \tilde{X}|)\)</span>.</p>
+<p>En este caso los limites del intervalo son los siguientes:</p>
+<div class="math notranslate nohighlight">
+\[LI = \tilde{X} - 3\cdot MAD\]</div>
+<div class="math notranslate nohighlight">
+\[LS = \tilde{X} + 3\cdot MAD\]</div>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">median_v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">])</span>
+<span class="n">mad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">([</span><span class="nb">abs</span><span class="p">(</span><span class="n">number</span><span class="o">-</span><span class="n">median_v</span><span class="p">)</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">]])</span>
+<span class="n">LI</span> <span class="o">=</span> <span class="n">median_v</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">mad</span>
+<span class="n">LS</span> <span class="o">=</span> <span class="n">median_v</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">mad</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">LI</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;vector&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">LS</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>vector</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-10</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>123</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Con este metodo se obtienen los mismo datos atipicos obtenidos con el metodo del rango intercuartílico.</p>
+<ul class="simple">
+<li><p><strong>Pruebas estadisticas:</strong> Tambien se pueden utilizar diferentes pruebas estadicticas que ayudan a determinar si un dato es atipico, como la Prueba de Grubbs, la Prueba de Dixon (estas solo permiten evaluar un dato unico al tiempo) y la Prueba de Rosner (esta si permite evaluar todos los datos para detefctar varios atipicos al tiempo.)</p></li>
+</ul>
+<p>Para detectar datos atipicos para datos bivariantes se pueden utilizar las siguientes tecnicas:</p>
+<ul class="simple">
+<li><p><strong>Prueba de Bonferroni:</strong> Esta prueba se utiliza para detectar si un punto resultantes de la relación de dos variables es atipico. Esta prueba tiene las siguientes hipotesis:</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(H_{0}:\)</span> la observación i-ésima NO es un atipico</p>
+<p><span class="math notranslate nohighlight">\(H_{1}:\)</span> la observación i-ésima SI es un atipico</p>
+<p>(esta prueba se puede realizar principalmente desde el lenguaje R)</p>
+<ul class="simple">
+<li><p><strong>Diagrama de dispersión:</strong> el diagrama tambien puede ayudar a identificar los valores atipicos visualmente, pero no es metodo muy exacto.</p></li>
+</ul>
+<p>Para detectar datos atipicos para datos multivariantes se puede usar el siguiente metodo:</p>
+<ul class="simple">
+<li><p><strong>Distancia de Mahalanobis</strong>: este metodo es util cuando se estan realizando analisis multivariantes, y permite detectar atipicos multivariante para todo el conjunto de datos, ya que mide la distancia de de un punto (un registro) al centroide de las observaciones. En palabras simples, lo que se hace con este metodo es calcular el cuadrado de la distancia de Mahalanobis (<span class="math notranslate nohighlight">\(D^{2}\)</span>) para cada registro del conjunto de datos (registros=filas), este cuadrado se asume tiene una distribución <span class="math notranslate nohighlight">\(\chi ^{2}\)</span> con grados de libertad, por lo que se aplica una prueba estadistica <span class="math notranslate nohighlight">\(\chi ^{2}\)</span> que evalue cada distancia para determinar si es atipico o no, considerando un nivel de significancia ya sea de 0.001, 0.05 o 0.1.
+Las hipotesis de la prueba serían:</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(H_{0}:\)</span> El punto NO es atipico
+<span class="math notranslate nohighlight">\(H_{1}:\)</span> El punto SI es atipico</p>
+<p>Para cada registro se obtendria un p-valor, que en caso de ser menor al nivel de significancia escogido, indica que el resgistro si se podria considerar atipico estadisticamente ( rechazo <span class="math notranslate nohighlight">\(H_{0}\)</span>)</p>
+<p>Además de utilizar todos estos metodos, tambien es importante tener conocimiento sobre el contexto de los datos, para determinar si los datos realmente se consideran atipicos, ya que en muchos caso, lo datos si pueden ser extremos al resto del conjunto de datos, pero pueden estar justificados por el mismo comportamiento de los datos.</p>
+</section>
+<section id="d-de-que-forma-trataria-con-datos-faltantes">
+<h4>D.  ¿De qué forma trataría con datos faltantes?<a class="headerlink" href="#d-de-que-forma-trataria-con-datos-faltantes" title="Permalink to this heading">#</a></h4>
+<p>Con los datos faltantes se podrían realizar dos operaciones: eliminarlos o imputarlos. Para determinar que se podria hacer con los datos faltantes seguiria los siguientes pasos:</p>
+<ol class="arabic simple">
+<li><p>Identificar el origen de los datos faltantes, es decir, que tipo de datos faltantes son. Estos pueden ser principalmente de 3 tipos: Faltantes no al azar, Faltantes al azar, Faltantes completamente al azar. Dependiendo de que tipo de datos faltantes se tenga, se podrian eliminar o realizar una imputación sobre los datos. Ya que no todos se podrian eliminar tan facilmente, por perdida de información que pueda afectar el análisis, o realizar una imputación, que puedo que no haga sentido en los datos.</p></li>
+<li><p>Si se tienen faltantes del tipo no al azar, se podrian eliminar los registros atipicos
+Eliminarlos no seria la mejor opción, pero en caso de hacerlo, verificaria si la cantidad de datos faltantes es menor al 5% de los datos de la variable, y en caso de serlo, se podrian eliminar los registros. Si la cantidad de fatos faltantes es superior, lo mejor es tratar de realizar una imputación de datos.</p></li>
+<li><p>La imputación consistiria en rellenar el espacio del dato faltante con otro valor.
+Por lo general para datos númericos, se imputa el dato faltante con la media, la mediana o la moda, principalmente se elige la mediana para evitar afectar la distribucción de los datos. Tambien se puede aplicar otras tecnicas de imputaciones un poco mas elaboradas, como es la imputación iterativa, la cual busca realizar un proceso parecido a una predicción para rellenar el dato falante con un valor mas cercano a la realidad, ya que considera no solo los valores del campo de interes, sino tambien los datos de las otras columnas para encontrar el valor mas ajustado.</p></li>
+</ol>
+<p>Para datos categoricos, lo común es utilizar la moda para reemplazar a los datos faltantes.</p>
+<p>Ejemplos de imputación:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Estatura&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">176</span><span class="p">,</span><span class="mi">156</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">165</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
+                   <span class="s2">&quot;Peso&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">72</span><span class="p">]})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   Estatura  Peso
+0     150.0    45
+1     176.0    68
+2     156.0    50
+3       NaN    70
+4     180.0    80
+5     150.0    47
+6     160.0    68
+7     165.0    64
+8     150.0    60
+9       NaN    72
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Estatura&quot;</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/466dc597c8a01b4c04db423c209a91a1963338188637c7d09be9e8ac6aa6676d.png" src="_images/466dc597c8a01b4c04db423c209a91a1963338188637c7d09be9e8ac6aa6676d.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Imputación simple por media:</p></li>
+</ul>
+<p>Aqui se logra ver que los datos faltantes fueron reemplazdos por la media = 160.875</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="n">imp_mean</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;mean&quot;</span><span class="p">)</span>
+<span class="n">imp_mean</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[150.     45.   ]
+ [176.     68.   ]
+ [156.     50.   ]
+ [160.875  70.   ]
+ [180.     80.   ]
+ [150.     47.   ]
+ [160.     68.   ]
+ [165.     64.   ]
+ [150.     60.   ]
+ [160.875  72.   ]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">)[:,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/90b7ffb543e16a469ea8a16cf642292d157f6af8ca93dc041889b079635009c9.png" src="_images/90b7ffb543e16a469ea8a16cf642292d157f6af8ca93dc041889b079635009c9.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Imputación simple por la mediana</p></li>
+</ul>
+<p>Aqui se logra ver que los datos faltantes fueron reemplazdos por la mediana = 158</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="n">imp_mean</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;median&quot;</span><span class="p">)</span>
+<span class="n">imp_mean</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[150.  45.]
+ [176.  68.]
+ [156.  50.]
+ [158.  70.]
+ [180.  80.]
+ [150.  47.]
+ [160.  68.]
+ [165.  64.]
+ [150.  60.]
+ [158.  72.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">)[:,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/59f84c273652c7f22fd6d1305aa7d4ef06a2a8e6c85ad377849b4ee0c22bac9a.png" src="_images/59f84c273652c7f22fd6d1305aa7d4ef06a2a8e6c85ad377849b4ee0c22bac9a.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Imputación simple por la moda</p></li>
+</ul>
+<p>Aqui se logra ver que los datos faltantes fueron reemplazados por la moda = 150.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="n">imp_mean</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;most_frequent&quot;</span><span class="p">)</span>
+<span class="n">imp_mean</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[150.  45.]
+ [176.  68.]
+ [156.  50.]
+ [150.  70.]
+ [180.  80.]
+ [150.  47.]
+ [160.  68.]
+ [165.  64.]
+ [150.  60.]
+ [150.  72.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">)[:,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/56aa06584af2f15fbecf4570db540164aeab6b442a0657b7280fd3a69238a773.png" src="_images/56aa06584af2f15fbecf4570db540164aeab6b442a0657b7280fd3a69238a773.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Imputación Iterativa:</p></li>
+</ul>
+<p>Con esta tecnica se consieran los valores de la variable peso para estimar los valores faltantes de la variables estatura:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.experimental</span> <span class="kn">import</span> <span class="n">enable_iterative_imputer</span>
+<span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">IterativeImputer</span>
+<span class="n">imp_mean</span> <span class="o">=</span> <span class="n">IterativeImputer</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">imp_mean</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[150.          45.        ]
+ [176.          68.        ]
+ [156.          50.        ]
+ [168.58536462  70.        ]
+ [180.          80.        ]
+ [150.          47.        ]
+ [160.          68.        ]
+ [165.          64.        ]
+ [150.          60.        ]
+ [170.16697787  72.        ]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">count</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ignored</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">imp_mean</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">)[:,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a65f07023a33fc04e293ef216389a05fd5541acd6bd1b3f20a6deec2e922b497.png" src="_images/a65f07023a33fc04e293ef216389a05fd5541acd6bd1b3f20a6deec2e922b497.png" />
+</div>
+</div>
+<p>Lo mejor es escoger el metodo que permita preservar lo mayor posible la distribución de los datos, de lo contrario los analisis o inferencias que se realicen no serán acordes a la realidad de los datos, y podrian estar erradas.</p>
+</section>
+</section>
+</section>
+<section id="analisis-y-modelado">
+<h2>ANÁLISIS Y MODELADO<a class="headerlink" href="#analisis-y-modelado" title="Permalink to this heading">#</a></h2>
+<section id="analisis-exploratorio">
+<h3>3.  ANÁLISIS EXPLORATORIO<a class="headerlink" href="#analisis-exploratorio" title="Permalink to this heading">#</a></h3>
+<p>Realice un análisis exploratorio en Python de los datos encontrados en el archivo adjunto en el correo. Este punto es de análisis abierto y no hay un resultado esperado.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">kaes1</span><span class="se">\\</span><span class="s2">Documents</span><span class="se">\\</span><span class="s2">Python Scripts</span><span class="se">\\</span><span class="s2">DatosPruebaAnalisis.csv&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PERIODO</th>
+      <th>ID CLIENTE</th>
+      <th>DEPARTAMENTO</th>
+      <th>CLASIFICACION</th>
+      <th>CONSUMO</th>
+      <th>TIPO CONSUMO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1/1/2021</td>
+      <td>1068535</td>
+      <td>ATLANTICO</td>
+      <td>RESIDENCIAL</td>
+      <td>0</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1/1/2021</td>
+      <td>1095302</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>21</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1/1/2021</td>
+      <td>1131454</td>
+      <td>ATLANTICO</td>
+      <td>RESIDENCIAL</td>
+      <td>0</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1/1/2021</td>
+      <td>1134487</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>132</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1/1/2021</td>
+      <td>1140821</td>
+      <td>ATLANTICO</td>
+      <td>RESIDENCIAL</td>
+      <td>0</td>
+      <td>REAL</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 312 entries, 0 to 311
+Data columns (total 6 columns):
+ #   Column         Non-Null Count  Dtype 
+---  ------         --------------  ----- 
+ 0   PERIODO        312 non-null    object
+ 1   ID CLIENTE     312 non-null    int64 
+ 2   DEPARTAMENTO   312 non-null    object
+ 3   CLASIFICACION  312 non-null    object
+ 4   CONSUMO        312 non-null    int64 
+ 5   TIPO CONSUMO   312 non-null    object
+dtypes: int64(2), object(4)
+memory usage: 14.8+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se tienen 312 registros con 6 columnas, con aparentemente ningún datos faltante.</p>
+<ul class="simple">
+<li><p>Validación de datos faltantes</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PERIODO          0
+ID CLIENTE       0
+DEPARTAMENTO     0
+CLASIFICACION    0
+CONSUMO          0
+TIPO CONSUMO     0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>No existen datos faltantes en el conjunto de datos.</p>
+<ul class="simple">
+<li><p>Validación de datos duplicados</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+</div>
+</div>
+<p>No existen datos duplicados.</p>
+<section id="descripcion-numerica-de-los-datos">
+<h4>Descripción númerica de los datos<a class="headerlink" href="#descripcion-numerica-de-los-datos" title="Permalink to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;ID CLIENTE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;ID CLIENTE&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;str&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">&quot;int&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CONSUMO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>312.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1226.971154</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3234.101606</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-75.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>20.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>353.750000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>23748.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Para la variable consumo, se tiene una media de 1226.97 y una mediana de 20, lo que indica que el consumo tiene una distribución asimetrica, con un sesgo hacia la derecha. Parecen existir valores atipicos o errados, ya que se ve un consumo negativo como el valor minimo, y esta es una variables cuyos valores deben ser iguales o superiores a 0. El 75% de los regustros de consumo fue menor o igual a 353.75.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">&quot;object&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PERIODO</th>
+      <th>ID CLIENTE</th>
+      <th>DEPARTAMENTO</th>
+      <th>CLASIFICACION</th>
+      <th>TIPO CONSUMO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>312</td>
+      <td>312</td>
+      <td>312</td>
+      <td>312</td>
+      <td>312</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>12</td>
+      <td>26</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>1/1/2021</td>
+      <td>1068535</td>
+      <td>ATLANTICO</td>
+      <td>RESIDENCIAL</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>26</td>
+      <td>12</td>
+      <td>228</td>
+      <td>180</td>
+      <td>304</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<ul class="simple">
+<li><p>Se tienen 12 fechas unicas en el campo PERIODO, la mas frecuente es 1/1/2021</p></li>
+<li><p>Se tienen datos de 26 clientes</p></li>
+<li><p>Se tiene información de 2 departamentos, siendo el mas frecuente Atlantico.</p></li>
+<li><p>La clasificacion del inmueble mas frecuente es Residencial</p></li>
+<li><p>Existen dos tipo de consumo, siendo el REAL el mas frecuente.</p></li>
+</ul>
+</section>
+<section id="analisis-univariado">
+<h4>Análisis univariado<a class="headerlink" href="#analisis-univariado" title="Permalink to this heading">#</a></h4>
+<section id="periodo">
+<h5>PERIODO<a class="headerlink" href="#periodo" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">],</span> <span class="n">forma</span><span class="o">=</span><span class="s2">&quot;%m&quot;</span> <span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">)[</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">32</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">],</span> <span class="n">forma</span><span class="o">=</span><span class="s2">&quot;%m&quot;</span> <span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">)[</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+
+<span class="ne">TypeError</span>: to_datetime() got an unexpected keyword argument &#39;forma&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se tienen registros del desde enero a diciembre de 2021, con 26 datos de clientes por cada mes.</p>
+</section>
+<section id="departamento">
+<h5>DEPARTAMENTO<a class="headerlink" href="#departamento" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">)[</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;counts&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Departamento&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Ya se habia visto en el análisis descriptivo que se tenian dos departamentos en esta variable, siendo Atlantico y Magdalena, con una mayor cantidad de registros de clientes para el departamente deL Atlantico, siendo los registros de clientes del Magdalena menos del 30% de los datos.</p>
+</section>
+<section id="clasificacion">
+<h5>CLASIFICACION<a class="headerlink" href="#clasificacion" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">)[</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;counts&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Clasificación del Inmueble&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>La mayoria de los registros de consumo de gas son de clientes con inmuebles de tipo residencial (mas del 50%), seguido de los clientes con inmuebles comerciales, y por ultimo los clientes con inmueble industriales.</p>
+</section>
+<section id="tipo-consumo">
+<h5>TIPO CONSUMO<a class="headerlink" href="#tipo-consumo" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;TIPO CONSUMO&quot;</span><span class="p">)[</span><span class="s2">&quot;TIPO CONSUMO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;TIPO CONSUMO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;counts&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Tipo de consumo&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Solo 8 registros de consumo de gas corresponden a una medidción estimada, el resto de mediciones de consumo corresponden al consumo real que tuve el cliente o inmueble.</p>
+</section>
+<section id="consumo">
+<h5>CONSUMO<a class="headerlink" href="#consumo" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">kurtosis</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">col</span> <span class="o">=</span> <span class="s1">&#39;CONSUMO&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Column: &#39;</span><span class="p">,</span> <span class="n">col</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Skew:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">(),</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Kurtosis: &#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">kurtosis</span><span class="p">(),</span> <span class="mi">2</span><span class="p">))</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">,</span><span class="n">nbins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+                   <span class="n">marginal</span><span class="o">=</span><span class="s2">&quot;box&quot;</span><span class="p">,</span> 
+                   <span class="n">hover_data</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span>
+                   <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Distribución del Consumo de gas&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Column:  CONSUMO
+Skew: 4.11
+Kurtosis:  20.53
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se puede ver que la variable Consumo, tiene una distribución asimetrica, de sesgo positivo ( skew &gt; 0) y con presencia de valores que se podrian considerar atipicos (kurtosis &gt; 3), los cuales se pueden ver tanto en el histograma como una gran cola, y en el boxplot como los puntos que se encuentran por fuera de los bigotes.
+Se logra ver que existe un valor menor a cero, que podia considerarse un error de medición o digitación.</p>
+<p>Se verifica cuantos datos de consumo menores a 0 se tienen:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se identifica a que cliente correponde este dato, para verificar como son los demás registro de consumo que ha tenido el cliente.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PERIODO</th>
+      <th>ID CLIENTE</th>
+      <th>DEPARTAMENTO</th>
+      <th>CLASIFICACION</th>
+      <th>CONSUMO</th>
+      <th>TIPO CONSUMO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>277</th>
+      <td>2021-11-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>-75</td>
+      <td>REAL</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;ID CLIENTE&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;50071540&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PERIODO</th>
+      <th>ID CLIENTE</th>
+      <th>DEPARTAMENTO</th>
+      <th>CLASIFICACION</th>
+      <th>CONSUMO</th>
+      <th>TIPO CONSUMO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>17</th>
+      <td>2021-01-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>52</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>2021-02-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>45</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>2021-03-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>48</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>2021-04-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>26</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>2021-05-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>28</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>2021-06-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>40</td>
+      <td>ESTIMADO</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>2021-07-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>30</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>199</th>
+      <td>2021-08-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>36</td>
+      <td>ESTIMADO</td>
+    </tr>
+    <tr>
+      <th>225</th>
+      <td>2021-09-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>34</td>
+      <td>ESTIMADO</td>
+    </tr>
+    <tr>
+      <th>251</th>
+      <td>2021-10-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>31</td>
+      <td>ESTIMADO</td>
+    </tr>
+    <tr>
+      <th>277</th>
+      <td>2021-11-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>-75</td>
+      <td>REAL</td>
+    </tr>
+    <tr>
+      <th>303</th>
+      <td>2021-12-01</td>
+      <td>50071540</td>
+      <td>ATLANTICO</td>
+      <td>COMERCIAL</td>
+      <td>0</td>
+      <td>REAL</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Además del registro correpondiente al 11 de enero, los demás valores de consumo que tuvo el cliente con ID 50071540 se podrina considerar normales. El valor de -75 se podria reemplezar por un dato faltantes, y se aplciarian tecnicas de imputación para rellenar el dato.</p>
+<p>Ahora se analizan los demás datos que visualmente se identifican como atipicos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">],</span>  <span class="p">[</span><span class="mf">0.25</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.75</span><span class="p">])</span>
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span> 
+<span class="n">LI</span> <span class="o">=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">IQR</span>
+<span class="n">LS</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">IQR</span>
+<span class="n">df_atipicos</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">LI</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">LS</span><span class="p">)]</span>
+<span class="n">df_atipicos</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(58, 6)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se tienen 58 datos aparentemente atipicos. Estos valores se encuentran por encima de un consumo de 1000.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_atipicos</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 6165,  4595, 21859,  6555,  5753,  6672,  4308, 19855,  7267,
+        8828,  4270, 23748,  3814,  8519,  5043,  4123, 19995,  3838,
+        7607,  1533,  4403, 16442,  3579,  6976,  1596,  4537,  4207,
+        3938,  3822,  1806,  4470,  6603,  7240,  3370,  1990,  4619,
+        4691,  8091,  2700,  3086,  4845,  1795,  8298,  2802,  4599,
+        3028,  9210,  1964,  2526,  4575,  8390,  5874,  3573,  2728,
+        5594, 12953,  6078,  6103], dtype=int64)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">df_atipicos</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">df_atipicos</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1533
+23748
+</pre></div>
+</div>
+</div>
+</div>
+<p>Para verificar que estos datos se pueden considerar como atipicos, se revisa a que clasificacion pertenecen:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_atipicos</span><span class="p">[</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CLASIFICACION
+INDUSTRIAL    58
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Los valores que aparentemente eran atipicos, son consumos de inmuebles industriales, los cuales es común que tengan altos consumos de gas. Estos datos que parecen ser un consumo atipico de gas, hacen parte del comportamiento normal de consumo para clientes con inmuebles de tipo industriual, por lo que no serian atipicos en su totalidad.</p>
+<p>Tambien se logra observar que existen muchos regsitros en los que se tuvo un consumo de 0.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;ID CLIENTE&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ID CLIENTE
+1068535     12
+1131454     12
+1140821     12
+50071540     1
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Para 3 clientes, no se registraron consumo de gas durante todo el 2021. Esto podria indicar que estos inmuebles ya no estan siendo utilizados y por tanto no registran consumo de gas.</p>
+</section>
+</section>
+<section id="analisis-bivariado">
+<h4>Análisis Bivariado<a class="headerlink" href="#analisis-bivariado" title="Permalink to this heading">#</a></h4>
+<section id="consumo-vs-clasificacion">
+<h5>CONSUMO VS CLASIFICACIÓN<a class="headerlink" href="#consumo-vs-clasificacion" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">,</span><span class="n">orientation</span><span class="o">=</span><span class="s2">&quot;h&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Consumo por tipo de inmueble&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Con esto se confirma, que los inmuebles de tipo Industrial son los que tienen mayor consumo de gas, seguido de los inmuebles de tipo Comercial. Los inmuebles de tipo residencial, auqnue son mayoria, son los que menos gas consumen, teniendo valores meneroa a 50.</p>
+<p>Dentro de los valores de consumo de gas para inmuebles industriales, se puede apreciar que existen algunos valores atipicos visualmente.</p>
+</section>
+<section id="consumo-vs-departamento">
+<h5>CONSUMO VS DEPARTAMENTO<a class="headerlink" href="#consumo-vs-departamento" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">,</span><span class="n">orientation</span><span class="o">=</span><span class="s2">&quot;h&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Consumo por Departamento&quot;</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Se logra apreciar que se tiene una menor dispersión del valor de consumo para el departmaento del Atlantico, en comparación a la dispersión que se tiene para el consumo del departamento de Magdalena, que a pesar de tener menor cantidad de registros, se tiene una tendencia hacia valores mayores de consumo, seguramente por la presencia de los inmbuenles industriales en este departamento.</p>
+</section>
+<section id="consumo-vs-periodo">
+<h5>CONSUMO VS PERIODO<a class="headerlink" href="#consumo-vs-periodo" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Se logra apreciar que para los primeros meses del 2021 se tuvo el mayor consumo de gas, con un pico en marzo. De ahi en adelante se tuvo una tendencia a la baja en el consumo de gas, para luego retomar una tendencia a la alza a partir de octubre.</p>
+<p>Como los inmuebles comerciales tienen una gran influencia en la suma de consumo por dia, se desea visualizar tambien el consumo para cada periodo, discriminado por tipo de inmueble:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">,</span> <span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">,</span> <span class="n">facet_col</span><span class="o">=</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">,</span> <span class="n">facet_col_wrap</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Consumo por tipo de Inmueble - 2021&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">matches</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<ul class="simple">
+<li><p>Para el consumo de los inmuebles comerciales, se tiene valores altos de consumos los primeros meses del 2021, luego se tiene una baja en el consumo, para posteriormente mantener un consumo aparentemente constante a partir de junio.</p></li>
+<li><p>En los inmuebles industriales, se tiene tambien los valores mas alto los primeros meses, con un pico de consumo en marzo, a partir del cual se tiene una tendencia a la baja en el consumo, para retornar a una alza en el consumo o a partir de octubre.</p></li>
+<li><p>Finalmente, para los inmuebles residenciales, no se tiene una tendencia a la alza o la baja, mas bien parece que los datos son estacionarios, con un patrón estacional que se repite cada 6 meses.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">,</span> <span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Consumo por Departamento - 2021&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Para los primeros meses del 2021, se tuvo un mayor consumo de gas en el departamento del Magdalena en comparación al departamento del Atlantico, a pesar que la mayoria de clientes son del Atlantico. A partir de junio, el consumo de gas en el Atlantico fue mayor, manteniendose hasta novimebre. Para diciembre, el consumo del Magdalena vuele a superar al consumo de gas en el Atlantico.</p>
+</section>
+<section id="clasificacion-vs-departamento">
+<h5>CLASIFICACION VS DEPARTAMENTO<a class="headerlink" href="#clasificacion-vs-departamento" title="Permalink to this heading">#</a></h5>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">density_heatmap</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">,</span> <span class="n">text_auto</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Para el caso del departamneto de Magdalena, no se tienen clientes con inmuebles de tipo comercial, solo de tipo residencial e industrial. Para ambos departamentos, la mayoria de clientes son inmuebles residenciales.</p>
+</section>
+</section>
+<section id="analisis-de-correlacion">
+<h4>ANÁLISIS DE CORRELACIÓN<a class="headerlink" href="#analisis-de-correlacion" title="Permalink to this heading">#</a></h4>
+<p>Ahora se analiza si existen una correlación entre las variables que se estan estudiando.</p>
+<p>Para esto se plantean las siguiente hipotesis:</p>
+<p><span class="math notranslate nohighlight">\(H_{0}:\)</span> No existe una relación entre las variables</p>
+<p><span class="math notranslate nohighlight">\(H_{1}:\)</span> Si existe una realción entre la variables</p>
+<p>(Las hipotesis asociadas a cada puebra que se va a utilizar son diferentes a la planteadas, pero se adaptan para facilitar la compresión de los resultados )</p>
+<ul class="simple">
+<li><p>CONSUMO VS DEPARTAMENTO</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">f_oneway</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">f_oneway</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">group</span><span class="p">[</span><span class="s1">&#39;CONSUMO&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;DEPARTAMENTO&#39;</span><span class="p">)])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas de ANOVA:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F-value: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">statistic</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-value: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">pvalue</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadísticas de ANOVA:
+F-value: 16.064344369906067
+p-value: 7.674551801537477e-05
+</pre></div>
+</div>
+</div>
+</div>
+<p>Al realizar el análisis de varianza para estas dos variable, y considerando un nivel de significancia del 0.05, como el p.valor es menor al nivel de significancia, se puede afrimar que existen diferencias significativas estadisticamente entre el consumo por Departamento, por lo que si existe una relación entre el Departamento y el Consumo.</p>
+<ul class="simple">
+<li><p>CONSUMO VS CLASIFICACION</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">f_oneway</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">group</span><span class="p">[</span><span class="s1">&#39;CONSUMO&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;CLASIFICACION&#39;</span><span class="p">)])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas de ANOVA:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F-value: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">statistic</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-value: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">pvalue</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadísticas de ANOVA:
+F-value: 188.14256213078923
+p-value: 3.601376459934906e-54
+</pre></div>
+</div>
+</div>
+</div>
+<p>Al realizar el análisis de varianza para estas dos variable, y considerando un nivel de significancia del 0.05, como el p.valor es menor al nivel de significancia, se puede afrimar que existen diferencias significativas estadisticamente entre el consumo por tipo de inmueble, por lo que si existe una relación entre el Departamento y el tipo de inmueble. Esto ya se lograba apreciar en los graficos realizados anteriormente, y solo se reliza la prueba como un metodo confirmatorio.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">chi2_contingency</span>
+<span class="n">tabla_contingencia</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;CLASIFICACION&quot;</span><span class="p">])</span>
+<span class="n">correlacion</span> <span class="o">=</span> <span class="n">chi2_contingency</span><span class="p">(</span><span class="n">tabla_contingencia</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-value: </span><span class="si">{</span><span class="n">correlacion</span><span class="o">.</span><span class="n">pvalue</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>p-value: 1.9548330709779576e-08
+</pre></div>
+</div>
+</div>
+</div>
+<p>En este caso, considerando el mismo nivel de significancia, se considera que si existe una relación entre Departamento y el tipo de inmueble.</p>
+</section>
+<section id="preparacion-de-los-datos">
+<h4>PREPARACIÓN DE LOS DATOS<a class="headerlink" href="#preparacion-de-los-datos" title="Permalink to this heading">#</a></h4>
+<p>Se va a imputar el valor de Consumo para la persona que tiene un registro negativo. Para las personas que han tenido un consumo de 0 durante todo el año, no se quitaran ni eliminarán, ya que no no afectan el valor total del consumo mensual, y se tendria que indigar mas en la causa de ese consumo igual a 0 antes de decidir realizar una imputación de datos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">277</span><span class="p">,</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">277</span><span class="p">,</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nan
+</pre></div>
+</div>
+</div>
+</div>
+<p>Para este caso se utilizará la mediana del consumo para la imputación del dato atipico.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imp_consumo</span> <span class="o">=</span>  <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imp_consumo</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">277</span><span class="p">,</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ahora se obtiene el total de consumo mensual:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="s2">&quot;PERIODO&quot;</span><span class="p">,</span> <span class="s2">&quot;CONSUMO&quot;</span><span class="p">]]</span>
+<span class="n">df_new</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PERIODO</th>
+      <th>CONSUMO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2021-01-01</td>
+      <td>46316.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2021-02-01</td>
+      <td>39529.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2021-03-01</td>
+      <td>50635.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2021-04-01</td>
+      <td>41801.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021-05-01</td>
+      <td>33938.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;PERIODO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
+<span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;MES&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;PERIODO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PERIODO</th>
+      <th>CONSUMO</th>
+      <th>YEAR</th>
+      <th>MES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2021-01-01</td>
+      <td>46316.0</td>
+      <td>2021</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2021-02-01</td>
+      <td>39529.0</td>
+      <td>2021</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2021-03-01</td>
+      <td>50635.0</td>
+      <td>2021</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2021-04-01</td>
+      <td>41801.0</td>
+      <td>2021</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021-05-01</td>
+      <td>33938.0</td>
+      <td>2021</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df_new</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;MES&#39;</span><span class="p">,</span> <span class="s1">&#39;YEAR&#39;</span><span class="p">],</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_encoded</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PERIODO</th>
+      <th>CONSUMO</th>
+      <th>MES_2</th>
+      <th>MES_3</th>
+      <th>MES_4</th>
+      <th>MES_5</th>
+      <th>MES_6</th>
+      <th>MES_7</th>
+      <th>MES_8</th>
+      <th>MES_9</th>
+      <th>MES_10</th>
+      <th>MES_11</th>
+      <th>MES_12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2021-01-01</td>
+      <td>46316.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2021-02-01</td>
+      <td>39529.0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2021-03-01</td>
+      <td>50635.0</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2021-04-01</td>
+      <td>41801.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021-05-01</td>
+      <td>33938.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2021-06-01</td>
+      <td>19342.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2021-07-01</td>
+      <td>24738.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2021-08-01</td>
+      <td>23387.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2021-09-01</td>
+      <td>19451.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2021-10-01</td>
+      <td>22865.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2021-11-01</td>
+      <td>26182.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2021-12-01</td>
+      <td>34726.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="planteamiento-de-modelo">
+<h3>4. PLANTEAMIENTO DE MODELO<a class="headerlink" href="#planteamiento-de-modelo" title="Permalink to this heading">#</a></h3>
+<p><em>Plantee modelo que permita predecir los consumos del primer mes del año 2022, tomando como base el año de historia que se tiene en el archivo adjunto. Identifique cuales y cuantos modelos implementaría y explique su razonamiento.</em></p>
+<p>Considerando que la información historica con la que se cuenta es reducida, no seria necesario implementar modelos complejos, como las redes neuronales, ya que no se tendria suficiente información para el entrenamiento y es un problema que se podria resolver con metodos mas simples y clasicos.</p>
+<p>Para realizar la predicción de consumo del mes de enero de 2022, se podrian considerar dos opciones, aplicar modelos de regresión simple, considerando como variable dependiente el Consumo, y como variable independiente el tiempo, en este caso el mes. Se podria aplicar un modelo de regresión de Ridge o uno de Lasso. En este escenario los resultados de predicción que obtengan para otros años, será igual mes a mes, es decir, la predicción de enero de 2022 será igual a la predicción de enero de 2023, pues solo se esta considerando el efecto del mes sobre la variable Consumo.</p>
+<p>Tambien se podrian implementar modelos de series de tiempo, que traten de explicar la variabilidad del consumo de gas mes a mes, y hacer la estimación para el proximo año. Se podrian aplicar tecnicas de series de tiempo como ARIMA, Suavizamiento exponencial simple, ya que no se detecta una estacionalidad en los datos del consumo a nivel global. Si se considerara hacer la predicción de consumo para cada tipo de inmueble (Comercial, Industrial y residencial), se podrian aplicar tecnicas de series de tiempo que incluyan el factor estacional, como SARIMA o Suavizamiento Exponencial doble o triple, principalmente para el consumo residencial, ya que se ve un patrón estacional para este tipo de clientes.</p>
+</section>
+<section id="modelado">
+<h3>5. MODELADO<a class="headerlink" href="#modelado" title="Permalink to this heading">#</a></h3>
+<p><em>En la medida de lo posible, implemente los modelos planteados en el punto 4, para esto debe usar Python.</em></p>
+<ul class="simple">
+<li><p>Regresión Ridge</p></li>
+</ul>
+<p>Se hace la separación de los datos, apartando los resgistrso del mes de novimebre y dicembre para evaluar el modelo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Ridge</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+<span class="n">X</span><span class="o">=</span> <span class="n">df_encoded</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">,</span> <span class="s2">&quot;PERIODO&quot;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_encoded</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">]</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">shuffle</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se crea un pipeline para realizar hiperparametrización de alpha, y encontrar el valor que arroja el mejor modelo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipe</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">Ridge</span><span class="p">())</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;ridge__alpha&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">]}</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipe</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best estimator:</span><span class="se">\n</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">best_estimator_</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best estimator:
+Pipeline(steps=[(&#39;standardscaler&#39;, StandardScaler()),
+                (&#39;ridge&#39;, Ridge(alpha=100))])
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se obtiene que alpha = 100, es el parametro que permite obtener el mejor modelo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ridge_metrics</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;RMSE&#39;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+               <span class="s1">&#39;R2&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+
+<span class="n">reg</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="n">reg</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">ridge_metrics</span><span class="p">[</span><span class="s1">&#39;RMSE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">score</span>
+<span class="n">ridge_metrics</span><span class="p">[</span><span class="s1">&#39;R2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">r2</span>
+
+<span class="c1"># Resultados</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ridge_metrics</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;RMSE&#39;: 4620.459508430287, &#39;MAPE&#39;: 0, &#39;R2&#39;: -0.16978985127021762}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([32214.3016983, 32214.3016983])
+</pre></div>
+</div>
+</div>
+</div>
+<p>Los resultados obtenidos con este modelo no fueron muy buenos, debidos a la poca cantidad de datos. Observando el valor del R2, que es negativo, se puede ver que este modelo no explica nada de la variabilidad del consumo, y el modelo obtenido no es mejor que implementar una linea constante para hacer las estimaciones. Este modelo no es adecuado para realizar la predicción del mes de enero del 2022.</p>
+<ul class="simple">
+<li><p>ARIMA</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">statsmodels.graphics.tsaplots</span> <span class="kn">import</span> <span class="n">plot_acf</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se realiza un análisis de autocorrelación de la serie de tiempo del Consumo, obsevando el grafico ACF para la serie de tiempo orginal, se puede ver por el comportamiento de los rezagos, que la serie no es estacionaria, y efectivamente existe una tendencia. Al realizar 2 diferenciaciones de la serie de tiempo, se obtiene una serie de tiempo estacionaria.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">)})</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Original Series&#39;</span><span class="p">)</span>
+<span class="n">plot_acf</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">lags</span> <span class="o">=</span><span class="mi">11</span><span class="p">);</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="o">.</span><span class="n">diff</span><span class="p">());</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;1st Order Differencing&#39;</span><span class="p">)</span>
+<span class="n">plot_acf</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">lags</span> <span class="o">=</span><span class="mi">10</span><span class="p">);</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span><span class="o">.</span><span class="n">diff</span><span class="p">());</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;2nd Order Differencing&#39;</span><span class="p">)</span>
+<span class="n">plot_acf</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">lags</span> <span class="o">=</span> <span class="mi">9</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b036c3c2619fc3b2a866bc02cab0fc250a378d066f4e6c14994741740329485c.png" src="_images/b036c3c2619fc3b2a866bc02cab0fc250a378d066f4e6c14994741740329485c.png" />
+</div>
+</div>
+<p>Se hace una división de los datos, para entrenar la serie de tiempo y luego para evaluarla, dejando los regsitros de noviembre y diciembre para el test.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="p">)</span>
+<span class="n">n_test</span> <span class="o">=</span> <span class="mi">2</span> 
+<span class="n">train_size</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="n">n_test</span>
+
+<span class="n">train</span> <span class="o">=</span> <span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="n">train_size</span><span class="p">]</span>
+<span class="n">dates_train</span> <span class="o">=</span> <span class="n">df_new</span><span class="o">.</span><span class="n">PERIODO</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="n">train_size</span><span class="p">]</span>
+<span class="n">test_1w</span> <span class="o">=</span> <span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_size</span><span class="p">:</span><span class="n">train_size</span> <span class="o">+</span> <span class="n">n_test</span><span class="p">]</span> 
+<span class="n">dates_1w</span> <span class="o">=</span> <span class="n">df_new</span><span class="o">.</span><span class="n">CONSUMO</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_size</span><span class="p">:</span><span class="n">train_size</span> <span class="o">+</span> <span class="n">n_test</span><span class="p">]</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;train:&quot;</span><span class="p">,</span> <span class="n">train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_1w:&quot;</span><span class="p">,</span> <span class="n">test_1w</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>train: (10,)
+test_1w: (2,)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.tsa.arima.model</span> <span class="kn">import</span> <span class="n">ARIMA</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Con el siguiente codigo se busca obtener los parametros del modelo ARIMA, que permitan obtener la metrica AIC mas baja.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_aic</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<span class="n">best_bic</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+
+<span class="n">best_order</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">best_mdl</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="n">pq_rng</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">d_rng</span>  <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pq_rng</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">d_rng</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">pq_rng</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">tmp_mdl</span> <span class="o">=</span> <span class="n">ARIMA</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">j</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+                <span class="n">tmp_aic</span> <span class="o">=</span> <span class="n">tmp_mdl</span><span class="o">.</span><span class="n">aic</span>
+                <span class="k">if</span> <span class="n">tmp_aic</span> <span class="o">&lt;</span> <span class="n">best_aic</span><span class="p">:</span>
+                    <span class="n">best_aic</span> <span class="o">=</span> <span class="n">tmp_aic</span>
+                    <span class="n">best_order</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+                    <span class="n">best_mdl</span> <span class="o">=</span> <span class="n">tmp_mdl</span>
+            <span class="k">except</span><span class="p">:</span> <span class="k">continue</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;aic: </span><span class="si">{:6.5f}</span><span class="s1"> | order: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">best_aic</span><span class="p">,</span> <span class="n">best_order</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>aic: 172.19429 | order: (1, 2, 0)
+</pre></div>
+</div>
+</div>
+</div>
+<p>En este caso se tiene un proceso autorregresivo de orde 1, media movil de orden 0, y se realizan 2 diferenciaciones en la serie de tiempo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.graphics.tsaplots</span> <span class="kn">import</span> <span class="n">plot_predict</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">ARIMA</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">best_order</span><span class="p">)</span>
+<span class="n">model_fit</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>El modelo ajustado a la serie de tiempo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">y_train</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">plot_predict</span><span class="p">(</span><span class="n">model_fit</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1200x800 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/cc59068121e69da6c5b18e93c0cb05d71c0929e284c26f019487a4c2e7f1ab5d.png" src="_images/cc59068121e69da6c5b18e93c0cb05d71c0929e284c26f019487a4c2e7f1ab5d.png" />
+</div>
+</div>
+<p>Función para obtener las metricas de predicción:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+
+<span class="k">def</span> <span class="nf">forecast_accuracy</span><span class="p">(</span><span class="n">forecast</span><span class="p">,</span> <span class="n">actual</span><span class="p">,</span> <span class="n">str_name</span><span class="p">):</span>
+    
+    <span class="n">mape</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">forecast</span> <span class="o">-</span> <span class="n">actual</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">actual</span><span class="p">))</span> <span class="c1"># MAPE</span>
+    <span class="n">mae</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">forecast</span> <span class="o">-</span> <span class="n">actual</span><span class="p">))</span>                 <span class="c1"># MAE</span>
+    <span class="n">rmse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">forecast</span> <span class="o">-</span> <span class="n">actual</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">.5</span>               <span class="c1"># RMSE</span>
+    <span class="n">mse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">forecast</span> <span class="o">-</span> <span class="n">actual</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>                    <span class="c1"># MSE</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">forecast</span><span class="p">,</span> <span class="n">actual</span><span class="p">)</span>
+    
+    <span class="n">df_acc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;MAE&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">mae</span><span class="p">],</span>
+                           <span class="s1">&#39;MSE&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">mse</span><span class="p">],</span>
+                           <span class="s1">&#39;MAPE&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">mape</span><span class="p">],</span>
+                           <span class="s1">&#39;RMSE&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">rmse</span><span class="p">],</span>
+                           <span class="s1">&#39;R2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">r2</span><span class="p">]},</span>
+                          <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="n">str_name</span><span class="p">])</span>
+    
+    <span class="k">return</span> <span class="n">df_acc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Función para ealizar una predicción movil, ya que el modelo arima solo permite hacer la predicción para un horizonte de 1:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arima_rolling</span><span class="p">(</span><span class="n">history</span><span class="p">,</span> <span class="n">test</span><span class="p">):</span>
+    
+    <span class="n">predictions</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">test</span><span class="p">)):</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">ARIMA</span><span class="p">(</span><span class="n">history</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">best_order</span><span class="p">)</span>
+        <span class="n">model_fit</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">model_fit</span><span class="o">.</span><span class="n">forecast</span><span class="p">()</span>
+        <span class="n">yhat</span> <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">yhat</span><span class="p">)</span>
+        <span class="n">obs</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="n">t</span><span class="p">]</span>
+        <span class="n">history</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obs</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;predicted=</span><span class="si">%f</span><span class="s1">, expected=</span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">yhat</span><span class="p">,</span> <span class="n">obs</span><span class="p">))</span>
+        
+    <span class="k">return</span> <span class="n">predictions</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_1wl</span> <span class="o">=</span> <span class="n">test_1w</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">yhat_1w</span>  <span class="o">=</span> <span class="n">arima_rolling</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">test_1wl</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>predicted=23330.214270, expected=26182.000000
+predicted=29537.457998, expected=34726.000000
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">forecast_accuracy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">test_1wl</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">yhat_1w</span><span class="p">),</span> <span class="s2">&quot;week 1&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MAE</th>
+      <th>MSE</th>
+      <th>MAPE</th>
+      <th>RMSE</th>
+      <th>R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>week 1</th>
+      <td>4020.163866</td>
+      <td>1.752682e+07</td>
+      <td>0.148948</td>
+      <td>4186.505103</td>
+      <td>0.039625</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Este modelo tambien tiene un R2 bajo, por lo que no logra explicar muy bien la variabilidad del consumo de gas. Aunque los valores obtenidos durnate el testeo son mas cercanos al valor real de los obtenidos con el modelo de Ridge.</p>
+<section id="prediccion">
+<h4>PREDICCIÓN<a class="headerlink" href="#prediccion" title="Permalink to this heading">#</a></h4>
+<p>Se utiliza el modelo de ARIMA, para realizar la predicción del mes de enero de 2022:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model2</span> <span class="o">=</span> <span class="n">ARIMA</span><span class="p">(</span><span class="n">df_new</span><span class="p">[</span><span class="s2">&quot;CONSUMO&quot;</span><span class="p">],</span> <span class="n">order</span><span class="o">=</span><span class="n">best_order</span><span class="p">)</span>
+<span class="n">model2_fit</span> <span class="o">=</span> <span class="n">model2</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pred</span> <span class="o">=</span> <span class="n">model2_fit</span><span class="o">.</span><span class="n">forecast</span><span class="p">()</span>
+<span class="n">pred</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12    41195.289281
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">TEORÍA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sql">1. SQL</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-cual-es-la-estructura-basica-de-un-select">A. ¿Cuál es la estructura básica de un SELECT?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-que-es-un-join">B. ¿Qué es un JOIN?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-diferencias-entre-inner-join-y-left-join">C. Diferencias entre INNER JOIN y LEFT JOIN.</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadistica">2. ESTADÍSTICA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-dar-3-ejemplos-de-distribuciones-estadisticas">A. Dar 3 ejemplos de distribuciones estadísticas.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-defina-media-mediana-y-moda">B.  Defina media, mediana y moda.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-como-identificar-datos-atipicos">C.  ¿Cómo identificar datos atípicos?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-de-que-forma-trataria-con-datos-faltantes">D.  ¿De qué forma trataría con datos faltantes?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-modelado">ANÁLISIS Y MODELADO</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio">3.  ANÁLISIS EXPLORATORIO</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-numerica-de-los-datos">Descripción númerica de los datos</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-univariado">Análisis univariado</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#periodo">PERIODO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#departamento">DEPARTAMENTO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">CLASIFICACION</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-consumo">TIPO CONSUMO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo">CONSUMO</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-bivariado">Análisis Bivariado</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-vs-clasificacion">CONSUMO VS CLASIFICACIÓN</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-vs-departamento">CONSUMO VS DEPARTAMENTO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-vs-periodo">CONSUMO VS PERIODO</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-vs-departamento">CLASIFICACION VS DEPARTAMENTO</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-correlacion">ANÁLISIS DE CORRELACIÓN</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-los-datos">PREPARACIÓN DE LOS DATOS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planteamiento-de-modelo">4. PLANTEAMIENTO DE MODELO</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelado">5. MODELADO</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prediccion">PREDICCIÓN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Karina Rodríguez
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
